@@ -17,6 +17,10 @@ module.exports = {
       options: {
         navigation: [
           {
+            title: 'Start',
+            slug: '/'
+          },
+          {
             title: 'Über uns',
             slug: '/ueber-uns'
           }
