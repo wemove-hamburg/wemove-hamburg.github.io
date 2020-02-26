@@ -8,6 +8,7 @@
   "starter-name": "gatsby-starter-minimal-blog",
   "scripts": {
     "build": "gatsby build",
+    "deploy": "gatsby build && gh-pages -d public -b master",
     "develop": "gatsby develop",
     "develop:cypress": "cross-env CYPRESS_SUPPORT=y yarn develop",
     "build:cypress": "cross-env CYPRESS_SUPPORT=y yarn build",
@@ -28,6 +29,7 @@
   },
   "devDependencies": {
     "cross-env": "^5.2.0",
-    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.8"
+    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.8",
+    "gh-pages": "^2.2.0"
   }
 }
