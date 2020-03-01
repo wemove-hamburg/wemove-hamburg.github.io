@@ -18,25 +18,25 @@ const Homepage = () => {
         <Hero />
       </section>
 
-      <section>
+      <section sx={{ mb: [4, 5, 6] }}>
         <Preamble />
       </section>
-      <section>
+      <section sx={{ mb: [4, 5, 6] }}>
         <Abstract />
       </section>
-      <section>
+      <section sx={{ mb: [4, 5, 6] }}>
         <People />
       </section>
-      <section>
+      <section sx={{ mb: [4, 5, 6] }}>
         <Distribution />
       </section>
-      <section>
+      <section sx={{ mb: [4, 5, 6] }}>
         <Infrastructure />
       </section>
-      <section>
+      <section sx={{ mb: [4, 5, 6] }}>
         <Initiatives />
       </section>
-      <section>
+      <section sx={{ mb: [4, 5, 6] }}>
         <Inspirations />
       </section>
     </Layout>
