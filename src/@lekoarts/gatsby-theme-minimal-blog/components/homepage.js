@@ -2,9 +2,9 @@
 import { jsx } from 'theme-ui';
 
 import Layout from '@lekoarts/gatsby-theme-minimal-blog/src/components/layout';
-import Title from '@lekoarts/gatsby-theme-minimal-blog/src/components/title';
 import Hero from '../texts/hero';
 import Audience from '../texts/audience';
+import Preamble from '../texts/preamble';
 
 const Homepage = () => {
   return (
@@ -13,7 +13,7 @@ const Homepage = () => {
         <Hero />
       </section>
 
-      <Title text="Die Bewegten" />
+      <Preamble />
       <Audience />
     </Layout>
   );

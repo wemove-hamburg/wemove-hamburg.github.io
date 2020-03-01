@@ -1,16 +1,36 @@
-Als erstes wollen wir eine Übersicht darüber erlangen, wer sich in unserer wundervollen Stadt alles bewegt. Dazu können wir die verschiednene Menschen in unterschiedliche Gruppen unterteilen.
+import { Message } from '@theme-ui/components';
+import Fact from '../components/fact.js'
 
-**Gesamt**  
-_ZAHL_GEBRAUCHT_
+<Title text="Die Bewegten" />
+
+Um zu verstehen um wen es im Bericht zur Mobilität überhaupt geht, stelle ich als erstes dar wer sich in unserer wundervollen Stadt alles bewegt. Ganz grob gesagt sind das:
+
+- <Fact value={1891810} title="Bewohnerinnen" source="https://www.statistik-nord.de/fileadmin/Dokumente/Statistische_Berichte/bevoelkerung/A_I_S_1_j_H/A_I_S1_j18.pdf" date="2018"  />
+- <Fact value={255059} title="Penlder (netto)" source="https://www.statistik-nord.de/fileadmin/Dokumente/Tabellen%2C_Tabellenb%C3%A4nde%2C_Brosch%C3%BCren/Metropolregion_Hamburg/T06_PendlerTeilzeitAlo.xlsx" date="2018" description="Zahl setzt sich folgendermaßen zusammen: Auspendler - Einpendler = Pendler (netto)" />
+
+Ergo befinden sich an einem durchschnittlichen Arbeitstag **mehr als 2 Mio Menschen** in Hamburg. Nebeneffekte, wie Menschen auf Reisen, vernachlässige ich an dieser Stelle bisher.
+
+Im Bezug auf die Mobilität und die Berdürnisse können wir diese Menschen in verschiedenen Gruppen unterteilen.
 
 **Alter**
-- Babies (0-1 Jahre): _ZAHL_GEBRAUCHT_
-- Kleinkinder (2-4 Jahre): _ZAHL_GEBRAUCHT_
-- Kinder (5-17 Jahre): _ZAHL_GEBRAUCHT_
-- Erwachsene (18-64 Jahre): _ZAHL_GEBRAUCHT_
-- Senioren (65+ Jahre): _ZAHL_GEBRAUCHT_
 
-**Mobilität**
+Je nach Alter haben wir unterschiedliche Bedrüfnisse und Möglichkeiten uns zu bewegen. Während wir in ganz jungen Jahren getragen oder geschoben werden müssen und somit nur passiv, uneigenständig am Verkehr teilnehmen, bewegen wir uns oft, bis ins hohe Alter, ganz unabhängig durch die Stadt.
+
+- <Fact value={116637} title="Kinder unter 6" source="https://www.statistik-nord.de/fileadmin/Dokumente/Statistik_informiert_SPEZIAL/SI_SPEZIAL_V_2019.pdf" date="2018"  />
+- <Fact value={189825} title="Kinder und Jugendliche unter 18" source="https://www.statistik-nord.de/fileadmin/Dokumente/Statistik_informiert_SPEZIAL/SI_SPEZIAL_V_2019.pdf" date="2018"  />
+- <Fact value={1198462} title="Erwachsene bis 65" source="https://www.statistik-nord.de/fileadmin/Dokumente/Statistik_informiert_SPEZIAL/SI_SPEZIAL_V_2019.pdf" date="2018"  />
+- <Fact value={336255} title="Senioren ab 65" source="https://www.statistik-nord.de/fileadmin/Dokumente/Statistik_informiert_SPEZIAL/SI_SPEZIAL_V_2019.pdf" date="2018"  />
+
+**Behinderung**
+
+Analog zum Alter haben wir auch je nach Behinderungen unterschiedliche Bedürfnisse an die Barrierefreiheit unserer Infrastruktur. Während manche mit eigenem Fahrrad oder Auto unterwegs sind, können sich andere mit akkustische Hilfe deutlich leichter unabhängig im Alltag bewegen.
+
+- <Fact value={243314} title="Menschen mit Behinderung" source="https://www.kwb.de/media/public/db/media/4/2014/01/306/analyse-erwerbsbeteiligung-behinderte-barrierefrei.pdf" date="2015"  />
+- <Fact value={147439} title="Davon schwerbehindert" source="https://www.kwb.de/media/public/db/media/4/2014/01/306/analyse-erwerbsbeteiligung-behinderte-barrierefrei.pdf" date="2015"  />
+
+Da jede Behinderung eigene Anforderungen an die Barrierefreiheit stellt, würde ich gerne hier in folgende Kategorien unterscheiden. 
+<Message>Wenn du zu den fehlenden Zahlen beitragen kannst, melde dich gerne bei mir.</Message>
+
 - Uneingeschränkt Mobil (keine Hilfsmittel): _ZAHL_GEBRAUCHT_
 - Eingeschränkt Mobil (kurze Wege ohne Hilfsmittel): _ZAHL_GEBRAUCHT_
 - Immobil (keine Fortbewegung ohne Hilfsmittel): _ZAHL_GEBRAUCHT_
