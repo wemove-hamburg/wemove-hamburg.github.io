@@ -18,13 +18,27 @@ const Homepage = () => {
         <Hero />
       </section>
 
-      <Preamble />
-      <Abstract />
-      <People />
-      <Distribution />
-      <Infrastructure />
-      <Initiatives />
-      <Inspirations />
+      <section>
+        <Preamble />
+      </section>
+      <section>
+        <Abstract />
+      </section>
+      <section>
+        <People />
+      </section>
+      <section>
+        <Distribution />
+      </section>
+      <section>
+        <Infrastructure />
+      </section>
+      <section>
+        <Initiatives />
+      </section>
+      <section>
+        <Inspirations />
+      </section>
     </Layout>
   );
 };

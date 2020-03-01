@@ -1,12 +1,23 @@
 import { Message } from '@theme-ui/components';
-import Fact from '../components/fact.js'
+import Fact from '../components/fact.js';
 
 <Title text="Die Bewegten" />
 
 Um zu verstehen um wen es im Bericht zur Mobilität überhaupt geht, stelle ich als erstes dar wer sich in unserer wundervollen Stadt alles bewegt. Ganz grob gesagt sind das:
 
-- <Fact value={1891810} title="Bewohnerinnen" source="https://www.statistik-nord.de/fileadmin/Dokumente/Statistische_Berichte/bevoelkerung/A_I_S_1_j_H/A_I_S1_j18.pdf" date="2018"  />
-- <Fact value={255059} title="Penlder (netto)" source="https://www.statistik-nord.de/fileadmin/Dokumente/Tabellen%2C_Tabellenb%C3%A4nde%2C_Brosch%C3%BCren/Metropolregion_Hamburg/T06_PendlerTeilzeitAlo.xlsx" date="2018" description="Zahl setzt sich folgendermaßen zusammen: Auspendler - Einpendler = Pendler (netto)" />
+- <Fact
+    value={1891810}
+    label="Bewohnerinnen"
+    source="https://www.statistik-nord.de/fileadmin/Dokumente/Statistische_Berichte/bevoelkerung/A_I_S_1_j_H/A_I_S1_j18.pdf"
+    date="2018"
+  />
+- <Fact
+    value={255059}
+    label="Penlder (netto)"
+    source="https://www.statistik-nord.de/fileadmin/Dokumente/Tabellen%2C_Tabellenb%C3%A4nde%2C_Brosch%C3%BCren/Metropolregion_Hamburg/T06_PendlerTeilzeitAlo.xlsx"
+    date="2018"
+    description="Auspendler - Einpendler = Pendler (netto)"
+  />
 
 Ergo befinden sich an einem durchschnittlichen Arbeitstag **mehr als 2 Mio Menschen** in Hamburg. Nebeneffekte, wie Menschen auf Reisen, vernachlässige ich an dieser Stelle bisher.
 
@@ -16,18 +27,54 @@ Im Bezug auf die Mobilität und die Berdürnisse können wir diese Menschen in v
 
 Je nach Alter haben wir unterschiedliche Bedrüfnisse und Möglichkeiten uns zu bewegen. Während wir in ganz jungen Jahren getragen oder geschoben werden müssen und somit nur passiv, uneigenständig am Verkehr teilnehmen, bewegen wir uns oft, bis ins hohe Alter, ganz unabhängig durch die Stadt.
 
-- <Fact value={116637} title="Kinder unter 6" source="https://www.statistik-nord.de/fileadmin/Dokumente/Statistik_informiert_SPEZIAL/SI_SPEZIAL_V_2019.pdf" date="2018"  />
-- <Fact value={189825} title="Kinder und Jugendliche unter 18" source="https://www.statistik-nord.de/fileadmin/Dokumente/Statistik_informiert_SPEZIAL/SI_SPEZIAL_V_2019.pdf" date="2018"  />
-- <Fact value={1198462} title="Erwachsene bis 65" source="https://www.statistik-nord.de/fileadmin/Dokumente/Statistik_informiert_SPEZIAL/SI_SPEZIAL_V_2019.pdf" date="2018"  />
-- <Fact value={336255} title="Senioren ab 65" source="https://www.statistik-nord.de/fileadmin/Dokumente/Statistik_informiert_SPEZIAL/SI_SPEZIAL_V_2019.pdf" date="2018"  />
+- <Fact
+    value={116637}
+    label="Kinder unter 6"
+    source="https://www.statistik-nord.de/fileadmin/Dokumente/Statistik_informiert_SPEZIAL/SI_SPEZIAL_V_2019.pdf"
+    date="2018"
+  />
+- <Fact
+    value={189825}
+    label="Kinder und Jugendliche unter 18"
+    source="https://www.statistik-nord.de/fileadmin/Dokumente/Statistik_informiert_SPEZIAL/SI_SPEZIAL_V_2019.pdf"
+    date="2018"
+  />
+- <Fact
+    value={1198462}
+    label="Erwachsene bis 65"
+    source="https://www.statistik-nord.de/fileadmin/Dokumente/Statistik_informiert_SPEZIAL/SI_SPEZIAL_V_2019.pdf"
+    date="2018"
+  />
+- <Fact
+    value={336255}
+    label="Senioren ab 65"
+    source="https://www.statistik-nord.de/fileadmin/Dokumente/Statistik_informiert_SPEZIAL/SI_SPEZIAL_V_2019.pdf"
+    date="2018"
+  />
 
 **Behinderung**
 
 Analog zum Alter haben wir auch je nach Behinderungen unterschiedliche Bedürfnisse an die Barrierefreiheit unserer Infrastruktur. Während manche mit eigenem Fahrrad oder Auto unterwegs sind, können sich andere mit akkustische Hilfe deutlich leichter unabhängig im Alltag bewegen.
 
-- <Fact value={243314} title="Menschen mit Behinderung" source="https://www.kwb.de/media/public/db/media/4/2014/01/306/analyse-erwerbsbeteiligung-behinderte-barrierefrei.pdf" date="2015"  />
-- <Fact value={147439} title="Davon schwerbehindert" source="https://www.kwb.de/media/public/db/media/4/2014/01/306/analyse-erwerbsbeteiligung-behinderte-barrierefrei.pdf" date="2015"  />
+- <Fact
+    value={243314}
+    label="Menschen mit Behinderung"
+    source="https://www.kwb.de/media/public/db/media/4/2014/01/306/analyse-erwerbsbeteiligung-behinderte-barrierefrei.pdf"
+    date="2015"
+  />
+- <Fact
+    value={147439}
+    label="Davon schwerbehindert"
+    source="https://www.kwb.de/media/public/db/media/4/2014/01/306/analyse-erwerbsbeteiligung-behinderte-barrierefrei.pdf"
+    date="2015"
+  />
 
 Es sind also **mehr als 7%** der Hamburgerinnen schwerbehindert. Ich bin mir bewusst, dass diese allgemeine Zahl nur eine bedingte Aussagekraft hat. Ich bin mir aber aufgrund der Diversität nicht sicher, was eine bessere Einordnung wäre.
 
-<p><Message>Hilf mir zu einer aussägekräftigeren Einordnung zu kommen. Ich dachte an so etwas wie ≫mobil≪, ≫bedingt mobil≪, ≫immobil≪? Das alle Menschen berücksichtigt und auf ihre Fähigkeit der Mobilität beschränkt.</Message></p>
+<p>
+  <Message>
+    Hilf mir zu einer aussägekräftigeren Einordnung zu kommen. Ich dachte an so
+    etwas wie ≫mobil≪, ≫bedingt mobil≪, ≫immobil≪? Das alle Menschen
+    berücksichtigt und auf ihre Fähigkeit der Mobilität beschränkt.
+  </Message>
+</p>
