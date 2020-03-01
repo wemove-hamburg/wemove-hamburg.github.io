@@ -3,7 +3,12 @@ import { jsx } from 'theme-ui';
 
 import Layout from '@lekoarts/gatsby-theme-minimal-blog/src/components/layout';
 import Hero from '../texts/hero';
-import Audience from '../texts/audience';
+import Abstract from '../texts/abstract';
+import Distribution from '../texts/distribution';
+import Infrastructure from '../texts/infrastructure';
+import Initiatives from '../texts/initiatives';
+import Inspirations from '../texts/inspirations';
+import People from '../texts/people';
 import Preamble from '../texts/preamble';
 
 const Homepage = () => {
@@ -14,7 +19,12 @@ const Homepage = () => {
       </section>
 
       <Preamble />
-      <Audience />
+      <Abstract />
+      <People />
+      <Distribution />
+      <Infrastructure />
+      <Initiatives />
+      <Inspirations />
     </Layout>
   );
 };
