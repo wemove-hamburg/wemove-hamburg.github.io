@@ -14,14 +14,20 @@ const Footer = () => {
         mt: [6],
         color: `secondary`,
         a: {
-          variant: `links.secondary`
+          variant: `links.secondary`,
         },
         flexDirection: [`column`, `column`, `row`],
-        variant: `dividers.top`
+        variant: `dividers.top`,
       }}
     >
       <div>
-        &copy; {new Date().getFullYear()} by {siteTitle}
+        &copy; {new Date().getFullYear()} by {siteTitle} –{' '}
+        <a
+          href="https://github.com/wemove-hamburg/wemove-hamburg.github.io"
+          title="Auf Github bearbeiten"
+        >
+          Seite bearbeiten
+        </a>
       </div>
     </footer>
   );

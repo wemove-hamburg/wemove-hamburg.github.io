@@ -31,7 +31,7 @@ this will run the page on [localhost:8000](localhost:8000) for you.
 To develop you can test your changes locally as described above. There are two long running branches
 
 - `develop` where the gatsby project lives
-- `master` where the build and deployed version of the page lives
+- `main` where the build and deployed version of the page lives
 
 ## Deployment
 
@@ -41,7 +41,7 @@ To deploy the page use
 yarn deploy
 ```
 
-which will build the page and deploy it to Github Pages via the `master` branch.
+which will build the page and deploy it to Github Pages via the `main` branch.
 
 ## Built With
 
