@@ -1,6 +1,6 @@
 # WeMove Hamburg
 
-WeMove Hamburg aims to be the single place of truth about the state of mobility in Hamburg, Germany.
+WeMove Hamburg aims to be the single place of subjective objectiveness on mobility in Hamburg, Germany.
 
 ## Getting Started
 
